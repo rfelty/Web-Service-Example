@@ -13,6 +13,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var myNameLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        let manager = AFHTTPRequestOperationManager()
+        
+        manager.GET( "http:/graph.facebook.com/bobdylan",
+            parameters: nil,
+            success: { (operation: AFHTTPRequestOperation!,responseObject: AnyObject!) in
+                println("Response: " + responseObject.description)
+            },
+            failure: { (operation: AFHTTPRequestOperation!,error: NSError!) in
+                println("Error: " + error.localizedDescription)
+        })
         // Do any additional setup after loading the view, typically from a nib.
     }
 

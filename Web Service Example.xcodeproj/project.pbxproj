@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A15F0E7D1AFB021D0095009A /* bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
 		A1DB635B1AF83DCE00EC3432 /* Web Service Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Web Service Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DB635F1AF83DCE00EC3432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1DB63601AF83DCE00EC3432 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +65,6 @@
 		A1DB63911AF8527D00EC3432 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		A1DB63921AF8527D00EC3432 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		A1DB63931AF8527D00EC3432 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
-		A1DB639D1AF8548800EC3432 /* bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +88,8 @@
 		A1DB63521AF83DCE00EC3432 = {
 			isa = PBXGroup;
 			children = (
-				A1DB639D1AF8548800EC3432 /* bridge.h */,
+				A15F0E7D1AFB021D0095009A /* bridge.h */,
+				A1DB63801AF8527D00EC3432 /* AFNetworking */,
 				A1DB635D1AF83DCE00EC3432 /* Web Service Example */,
 				A1DB63731AF83DCE00EC3432 /* Web Service ExampleTests */,
 				A1DB635C1AF83DCE00EC3432 /* Products */,
@@ -111,7 +112,6 @@
 				A1DB63621AF83DCE00EC3432 /* ViewController.swift */,
 				A1DB63641AF83DCE00EC3432 /* Main.storyboard */,
 				A1DB63671AF83DCE00EC3432 /* Images.xcassets */,
-				A1DB63801AF8527D00EC3432 /* AFNetworking */,
 				A1DB63691AF83DCE00EC3432 /* LaunchScreen.xib */,
 				A1DB635E1AF83DCE00EC3432 /* Supporting Files */,
 			);
@@ -166,7 +166,8 @@
 				A1DB63921AF8527D00EC3432 /* AFURLSessionManager.h */,
 				A1DB63931AF8527D00EC3432 /* AFURLSessionManager.m */,
 			);
-			path = AFNetworking;
+			name = AFNetworking;
+			path = "Web Service Example/AFNetworking";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -481,6 +482,7 @@
 				A1DB637C1AF83DCE00EC3432 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1DB637D1AF83DCE00EC3432 /* Build configuration list for PBXNativeTarget "Web Service ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +491,7 @@
 				A1DB637F1AF83DCE00EC3432 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
