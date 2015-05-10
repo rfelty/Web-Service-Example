@@ -19,6 +19,9 @@ class ViewController: UIViewController {
             parameters: nil,
             success: { (operation: AFHTTPRequestOperation!,responseObject: AnyObject!) in
                 println("Response: " + responseObject.description)
+                if let myName = responseObject["name"] as? String {
+                    self.myNameLabel.text = myName
+                }
             },
             failure: { (operation: AFHTTPRequestOperation!,error: NSError!) in
                 println("Error: " + error.localizedDescription)

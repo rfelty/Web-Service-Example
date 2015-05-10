@@ -8,6 +8,6 @@
 
 #ifndef Web_Service_Example_bridge_h
 #define Web_Service_Example_bridge_h
-#import "AFNetworking/AFNetworking.h"
+#import "AFNetworking.h"
 
 #endif
