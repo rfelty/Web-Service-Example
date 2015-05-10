@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let manager = AFHTTPRequestOperationManager()
         
-        manager.GET( "http:/graph.facebook.com/bobdylan",
+        manager.GET( "http:/graph.facebook.com/rickfelty",
             parameters: nil,
             success: { (operation: AFHTTPRequestOperation!,responseObject: AnyObject!) in
                 println("Response: " + responseObject.description)
